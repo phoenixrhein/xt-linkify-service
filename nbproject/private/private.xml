@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/E:/project-workspaces/netbeans12/linkify-service/.env.example</file>
+            <file>file:/E:/project-workspaces/netbeans12/linkify-service/src/Providers/AppServiceProvider.php</file>
+            <file>file:/E:/project-workspaces/netbeans12/linkify-service/bootstrap/app.php</file>
+            <file>file:/E:/project-workspaces/netbeans12/linkify-service/storage/app/mockdata.json</file>
+            <file>file:/E:/project-workspaces/netbeans12/linkify-service/src/Logging/Formatter/DefaultFormatter.php</file>
+            <file>file:/E:/project-workspaces/netbeans12/linkify-service/composer.json</file>
+            <file>file:/E:/project-workspaces/netbeans12/linkify-service/database/migrations/2021_10_09_110006_user.php</file>
+            <file>file:/E:/project-workspaces/netbeans12/linkify-service/storage/logs/laravel.log</file>
+            <file>file:/E:/project-workspaces/netbeans12/linkify-service/config/database.php</file>
+            <file>file:/E:/project-workspaces/netbeans12/linkify-service/config/logging.php</file>
+            <file>file:/E:/project-workspaces/netbeans12/linkify-service/.env</file>
+            <file>file:/E:/project-workspaces/netbeans12/linkify-service/src/Controllers/UsersController.php</file>
+        </group>
+    </open-files>
+</project-private>
