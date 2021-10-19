@@ -8,3 +8,4 @@ phpunit.xml
 .reports
 !**/.gitkeep
 nbproject
+nbproject/private/private.xml
