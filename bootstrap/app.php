@@ -27,4 +27,7 @@ $app->singleton(
     de\xovatec\linkify\Console\Kernel::class
 );
 
+$app->register(Flipbox\LumenGenerator\LumenGeneratorServiceProvider::class);
+$app->withEloquent();
+
 return $app;

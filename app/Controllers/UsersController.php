@@ -41,15 +41,6 @@ class UsersController extends Controller
             \json_decode($users)
         );
         
-        // Test database connection
-try {
-    /** \PDO $pdo */
-    $pdo = \DB::connection()->getPdo();
-    $r = $pdo->query("select * from user;");
-    var_dump($r->rowCount());
-} catch (\Exception $e) {
-    die("Could not connect to the database.  Please check your configuration. error:" . $e );
-}
     }
 
     /**
@@ -60,7 +51,7 @@ try {
     {
         $page = \max(1, $request->query->getInt('page', 1));
         $limit = \min($request->query->getInt('limit', 10), 100);
-
+           
         $paginator = new LengthAwarePaginator(
             $this->data->forPage($page, $limit)->values(),
             $this->data->count(),
