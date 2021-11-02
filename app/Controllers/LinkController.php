@@ -3,37 +3,69 @@
 namespace de\xovatec\linkify\Controllers;
 
 use de\xovatec\linkify\Services\LinkService;
-use Exception;
+use Illuminate\Http\JsonResponse;
+use Illuminate\Http\Request;
 use Laravel\Lumen\Routing\Controller;
 
+/**
+ * class LinkController
+ */
 class LinkController extends Controller
 {
+
     /**
      * 
      * @var LinkService
      */
-    private $linkService;
-    
-    protected $response;
+    private LinkService $linkService;
 
+    /**
+     * 
+     * @var JsonResponse
+     */
+    protected JsonResponse $response;
+
+    /**
+     * LinkController constructor
+     * 
+     * @param LinkService $linkService
+     */
     public function __construct(LinkService $linkService)
     {
-       $this->linkService = $linkService;
-       $this->response = new \Illuminate\Http\JsonResponse();
+        $this->linkService = $linkService;
+        $this->response = new JsonResponse();
     }
-    
-    public function list(): \Illuminate\Http\JsonResponse
+
+    /**
+     * Link list
+     * 
+     * @return JsonResponse
+     */
+    public function list(): JsonResponse
     {
         return $this->response->setContent($this->linkService->getList());
     }
-    
-    public function add()
+
+    /**
+     * Add new link
+     * 
+     * @param Request $request
+     * @return JsonResponse
+     */
+    public function add(Request $request): JsonResponse
     {
-        
+        return $this->response->setContent($this->linkService->add($request->get('link')));
     }
-    
-    public function markAsRead()
+
+    /**
+     * Mark link as read
+     * 
+     * @param int $id
+     * @return JsonResponse
+     */
+    public function markAsRead(int $id): JsonResponse
     {
-        
+        return $this->response->setContent($this->linkService->markAsRead($id));
     }
+
 }
