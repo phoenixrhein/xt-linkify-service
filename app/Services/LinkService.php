@@ -47,7 +47,7 @@ class LinkService
         $user = $this->user->getSessionUser();
         $defaultGroup = $this->linkGroup->getDefaultGroup($user);
 
-        return LinkList::where('fk_link_group_id', $defaultGroup->id)->get();
+        return LinkList::where('fk_link_group_id', $defaultGroup->id)->orderByDesc('id')->get();
     }
 
     /**

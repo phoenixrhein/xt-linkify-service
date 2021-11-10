@@ -54,7 +54,7 @@ class LinkController extends Controller
      */
     public function add(Request $request): JsonResponse
     {
-        return $this->response->setContent($this->linkService->add($request->get('link')));
+        return $this->response->setContent($this->linkService->add($request->post('link')));
     }
 
     /**
