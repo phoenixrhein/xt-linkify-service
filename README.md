@@ -1,36 +1,5 @@
-# Lumen Micro service boilerplate
+# linkify backend
 
-## Run with PHP built-in web server
+It is a small project to get to know the PHP framework Lumen. Together with the frontend, which I implemented in Angular in an own Github repository, a web application was created, with which you can store links. 
 
-```shell
-php -S localhost:8080 -t public/
-```
-
-## Project Structure
-
-| Directory | Description |
-|-----------|-------------|
-| `/src`             | Where the main application sources reside |
-| `/src/Controllers` | API Controller location |
-| `/src/Providers`   | Directory to register providers |
-| `/public`          | Entry point for the service |
-| `/tests`           | Placeholder directory for Unit Tests |
-| `/vendor`          | Composer third-party dependencies |
-
-## Getting Started
-
-### Create a project
-
-```shell
-
-```
-
-### Access the directory and change
-
-* [ ] namespaces
-* [ ] readme file
-* [ ] default configuration and setup
-
-### Update packages
-
-Run `composer update` or `composer dump-autoload` to refresh the packages.
+Therefore the motto of the project: Remember the link

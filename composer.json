@@ -1,10 +1,9 @@
 {
     "name": "xt/linkify-service",
-    "description": "A base to build Lumen apps on.",
+    "description": "Frontend for linkify",
     "keywords": [
-        "lumen",
-        "boilerplate",
-        "stub"
+        "Frontend",
+        "linkify"
     ],
     "license": "proprietary",
     "type": "project",
